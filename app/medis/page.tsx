@@ -1,0 +1,4 @@
+import { Footer, Nav } from '../components';
+import { Stethoscope } from 'lucide-react';
+const blocks=['Clinical calculator: HPL, BMI, MAP, skrining preeklampsia','Indikasi rujukan fetomaternal berdasarkan maternal, janin, plasenta, dan kembar kompleks','Checklist evaluasi awal: tekanan darah, proteinuria, trombosit, fungsi ginjal/hati bila indikasi','Pertimbangan aspirin dosis rendah sesuai guideline lokal dan penilaian klinis','Template edukasi pasien dan rencana follow-up'];
+export default function Medis(){return <main><Nav/><section className="section"><span className="badge">Mode Tenaga Medis</span><h1 className="text-4xl md:text-5xl font-black mt-4 text-pink-950">Alat bantu klinis ringkas untuk skrining dan rujukan fetomaternal.</h1><div className="grid md:grid-cols-2 gap-5 mt-8">{blocks.map(b=><div className="glass card" key={b}><Stethoscope className="text-pink-700"/><p className="font-semibold mt-3">{b}</p></div>)}</div></section><Footer/></main>}
